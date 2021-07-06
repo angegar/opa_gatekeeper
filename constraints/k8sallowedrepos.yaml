@@ -1,0 +1,15 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: ns-must-have-gk
+spec:
+  enforcementAction: deny
+  match:
+    scope: "Namespaced"
+  # excludedNamespaces: ["kube-system","kube-public","kube-node-lease","fleet-system","cattle-system","cattle-gatekeeper-system"]
+  kinds:
+  - kinds: ["Pod"]
+  namespaces: 
+    - "default"
+  parameters:
+    repos: ["jenkins/"]
