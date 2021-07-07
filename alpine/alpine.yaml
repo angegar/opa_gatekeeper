@@ -7,7 +7,7 @@ metadata:
   name: alpine-git-pod
 spec:
   containers:
-  - image: alpine/git
+  - image: alpine/git:latest
     name: alpine-git-pod
     resources: {}
   dnsPolicy: ClusterFirst
