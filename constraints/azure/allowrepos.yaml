@@ -11,4 +11,4 @@ spec:
   namespaces: 
     - "default"
   parameters:
-    repos: ["jenkins/", "gitlab/", "hashicorp/terraform", "rancher/"]
+    repos: ["jenkins/", "gitlab/", "alpine", "hashicorp/terraform", "rancher/"]
