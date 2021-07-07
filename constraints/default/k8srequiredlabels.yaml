@@ -16,5 +16,5 @@ spec:
     - "default"
   parameters:
     labels: 
-      key: contact
+      - key: contact
     message: "Missing mandatory label [contact]"
