@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: jenkins
+    run: jenkins-pod
   name: jenkins-pod
 spec:
   containers:
