@@ -1,0 +1,14 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: repo-must-be-allowed
+spec:
+  enforcementAction: deny
+  match:
+    scope: "Namespaced"
+  kinds:
+  - kinds: ["Pod"]
+  namespaces: 
+    - "default"
+  parameters:
+    repos: ["jenkins/", "node/", "hashicorp/terraform"]
