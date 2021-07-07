@@ -4,11 +4,11 @@ metadata:
   creationTimestamp: null
   labels:
     run: node
-  name: node
+  name: nodeJS
 spec:
   containers:
-  - image: node
-    name: node
+  - image: node:lts
+    name: nodeJS
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
