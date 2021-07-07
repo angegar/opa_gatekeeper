@@ -3,12 +3,12 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: alpine-pod
-  name: alpine-pod
+    run: alpine-git-pod
+  name: alpine-git-pod
 spec:
   containers:
-  - image: alpine
-    name: alpine-pod
+  - image: alpine/git
+    name: alpine-git-pod
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
