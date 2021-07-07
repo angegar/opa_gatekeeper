@@ -3,12 +3,12 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: jenkins-pod
-  name: jenkins-pod
+    run: alpine-git-pod
+  name: alpine-git-pod
 spec:
   containers:
-  - image: jenkins/jenkins
-    name: jenkins-pod
+  - image: alpine/git:latest
+    name: alpine-git-pod
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always

@@ -1,15 +1,14 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sAllowedRepos
 metadata:
-  name: allowed-repository
+  name: allowed-several-repo
 spec:
   enforcementAction: deny
   match:
     scope: "Namespaced"
-  # excludedNamespaces: ["kube-system","kube-public","kube-node-lease","fleet-system","cattle-system","cattle-gatekeeper-system"]
   kinds:
   - kinds: ["Pod"]
   namespaces: 
     - "default"
   parameters:
-    repos: ["jenkins/"]
+    repos: ["jenkins/", "gitlab/", "alpine/", "hashicorp/terraform", "rancher/"]

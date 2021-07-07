@@ -3,12 +3,12 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: jenkins-pod
-  name: jenkins-pod
+    run: node
+  name: nodejs
 spec:
   containers:
-  - image: jenkins/jenkins
-    name: jenkins-pod
+  - image: node:lts
+    name: nodejs
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
