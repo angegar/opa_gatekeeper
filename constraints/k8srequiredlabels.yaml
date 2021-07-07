@@ -1,15 +1,20 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sAllowedRepos
+kind: K8sRequiredLabels
 metadata:
-  name: allowed-repository
+  name: required-labels
 spec:
   enforcementAction: deny
   match:
     scope: "Namespaced"
   # excludedNamespaces: ["kube-system","kube-public","kube-node-lease","fleet-system","cattle-system","cattle-gatekeeper-system"]
   kinds:
-  - kinds: ["Pod"]
+  - kinds: 
+      - "Pod"
+      - "Deployment"
+      - "Service"
   namespaces: 
     - "default"
   parameters:
-    repos: ["jenkins/"]
+    labels: 
+      key: contact
+    message: "Missing mandatory label [contact]"

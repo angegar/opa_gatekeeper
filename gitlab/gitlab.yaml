@@ -7,7 +7,7 @@ metadata:
   name: gitlab
 spec:
   containers:
-  - image: gitlab/gitlab
+  - image: gitlab/gitlab-ce
     name: gitlab
     resources: {}
   dnsPolicy: ClusterFirst
