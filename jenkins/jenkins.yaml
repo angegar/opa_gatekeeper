@@ -4,11 +4,11 @@ metadata:
   creationTimestamp: null
   labels:
     run: jenkins
-  name: jenkins
+  name: jenkins-pod
 spec:
   containers:
   - image: jenkins/jenkins
-    name: jenkins
+    name: jenkins-pod
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
