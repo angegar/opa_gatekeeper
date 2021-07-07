@@ -6,9 +6,9 @@ spec:
   enforcementAction: deny
   match:
     scope: "Namespaced"
-  kinds:
-  - kinds: ["Pod"]
-  namespaces: 
-    - "default"
+    kinds:
+    - kinds: ["Pod"]
+    namespaces: 
+      - "default"
   parameters:
     repos: ["jenkins/"]

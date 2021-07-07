@@ -7,13 +7,13 @@ spec:
   match:
     scope: "Namespaced"
   # excludedNamespaces: ["kube-system","kube-public","kube-node-lease","fleet-system","cattle-system","cattle-gatekeeper-system"]
-  kinds:
-  - kinds: 
-      - "Pod"
-      - "Deployment"
-      - "Service"
-  namespaces: 
-    - "default"
+    kinds:
+    - kinds: 
+        - "Pod"
+        - "Deployment"
+        - "Service"
+    namespaces: 
+      - "default"
   parameters:
     labels: 
       - key: contact
