@@ -1,7 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sAllowedRepos
 metadata:
-  name: allowed-repo-jenkins
+  name: allowed-several-repo
 spec:
   enforcementAction: deny
   match:
