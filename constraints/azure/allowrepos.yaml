@@ -8,6 +8,7 @@ spec:
     scope: "Namespaced"
     kinds:
       - kinds: ["Pod"]
+        apiGroups: [""]
     namespaces:
       - "default"
   parameters:
