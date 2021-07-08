@@ -5,10 +5,11 @@ metadata:
 spec:
   enforcementAction: deny
   match:
-    scope: "Namespaced"
     kinds:
-    - kinds: ["Pod"]
+    - apiGroups: [""]
+      kinds: ["Pod"]
     namespaces: 
       - "default"
   parameters:
-    repos: ["jenkins/"]
+    repos: 
+      - "jenkins/"
