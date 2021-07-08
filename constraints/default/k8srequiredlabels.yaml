@@ -5,17 +5,18 @@ metadata:
 spec:
   enforcementAction: deny
   match:
-  # excludedNamespaces: ["kube-system","kube-public","kube-node-lease","fleet-system","cattle-system","cattle-gatekeeper-system"]
+    # excludedNamespaces: ["kube-system","kube-public","kube-node-lease","fleet-system","cattle-system","cattle-gatekeeper-system"]
     kinds:
-    - apiGroups: [""]
-      kinds: 
-        - "Pod"
-        - "Deployment"
-        - "Service"
-    namespaces: 
+      - apiGroups: [""]
+        kinds:
+          - "Pod"
+          - "Deployment"
+          - "Service"
+    namespaces:
       - "default"
   parameters:
     message: "Missing mandatory label [contact]"
-    labels: 
+    labels:
       - key: contact
+
 
