@@ -6,10 +6,10 @@ spec:
   enforcementAction: deny
   match:
     kinds:
-    - apiGroups: [""]
-      kinds: ["Pod"]
-    namespaces: 
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces:
       - "default"
   parameters:
-    repos: 
+    repos:
       - "jenkins/"
