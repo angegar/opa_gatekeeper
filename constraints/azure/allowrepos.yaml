@@ -10,6 +10,6 @@ spec:
       - kinds: ["Pod"]
         apiGroups: [""]
     namespaces:
-      - "default"
+      - default
   parameters:
     repos: ["jenkins/", "gitlab/", "alpine/", "hashicorp/terraform"]
