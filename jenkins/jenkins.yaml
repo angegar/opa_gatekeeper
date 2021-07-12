@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: jenkins-pod
+    contact: yohan-valette
   name: jenkins-pod
 spec:
   containers:
